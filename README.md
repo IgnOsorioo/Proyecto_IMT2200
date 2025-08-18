@@ -1,7 +1,7 @@
 # Proyecto_IMT2200
-| Integrantes | GitHub ID |
-| :-: | :-: |
-| Carolina Neira |  |
-| José Romero | jo-sep |
-| Reinaldo Oliva | reyolivaaa |
-| Ignacio Osorio | IgnOsorioo |
+| Integrantes | GitHub ID | | Correo |
+| :-: | :-: | :-: |
+| Carolina Neira |  |  | 
+| José Romero | jo-sep | |  
+| Reinaldo Oliva | reyolivaaa | |  |
+| Ignacio Osorio | IgnOsorioo | | ign.osorio@estudiante.uc.cl |
