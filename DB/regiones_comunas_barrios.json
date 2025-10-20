@@ -1,0 +1,470 @@
+{   
+    "valparaiso": {
+        "los-andes": [
+            "Centro de Los Andes",
+            "Los Andes Poniente",
+            "Los Andes Oriente"
+        ],
+        "calle-larga": [],
+        "rinconada": [],
+        "llaillay": [],
+        "san-esteban": [
+            "Centro de San Esteban",
+            "San Francisco de Los Andes"
+        ],
+        "santa-maria": [],
+        "san-felipe": [
+            "Centro de San Felipe",
+            "Santa Teresa de Los Andes",     
+            "Sur de San Felipe",
+            "Tocornal",
+            "Almendral",
+            "Estadio Municipal de San Felipe"
+        ],
+        "catemu": [],
+        "putaendo": [],
+        "casablanca": [
+            "Ciudad de Casablanca",
+            "Quintay"
+        ]
+    },
+    "bernardo-ohiggins": {
+        "mostazal": [],
+        "codegua": [],
+        "graneros": [],
+        "rancagua": [    
+            "Centro de Rancagua",
+            "La Compañía",
+            "Recreo",
+            "San Damián",
+            "Bosques de Santa Clara - San Francisco",
+            "Hospital Regional de Rancagua",
+            "Estadio El Teniente"
+        ],
+        "machali": [
+            "Centro de Machalí",
+            "Avenida San Juan",
+            "El Polo de Machalí",
+            "Nogales",
+            "Vista del Valle(38)"
+        ],
+        "olivar": [],
+        "coinco": [],
+        "requinoa": [],
+        "rengo": [],
+        "quinta-de-tilcoco": []
+    },
+    "metropolitana": {
+        "santiago": [
+            "Barrio Brasil",
+            "Barrio Diez de Julio",
+            "Barrio Lastarria",
+            "Barrio República",
+            "Barrio San Borja",
+            "Barrio Yungay",
+            "Bogotá - Sierra Bella",
+            "Bulnes",
+            "Centro Histórico de Santiago",
+            "Club Hípico",
+            "Dieciocho",
+            "Ejército - Toesca",
+            "Franklin - Biobío",
+            "Meiggs",
+            "Parque Almagro",
+            "Parque Los Reyes",
+            "Parque O'Higgins",
+            "San Diego",
+            "Santa Isabel"
+        ],
+        "nunoa": [
+            "Amapolas",
+            "Diagonal Oriente",
+            "Diego de Almagro",
+            "Estadio Nacional",
+            "Juan Gómez Millas",
+            "Metro Irarrázaval",
+            "Metro Monseñor Eyzaguirre",
+            "Metro Simón Bolivar",
+            "Metro Ñuñoa",
+            "Parque Botánico",
+            "Parque Juan XXIII",
+            "Parque San Eugenio - Metro Ñuble",
+            "Plaza Egaña",
+            "Plaza Ñuñoa",
+            "Villa Frei",
+            "Villa Los Jardínes - Villa Los Presidentes"
+        ],
+        "providencia": [
+            "Barrio Italia",
+            "Bellavista",
+            "Campus Oriente",
+            "Inés de Suárez",
+            "Las Lilas",
+            "Los Leones",
+            "Manuel Montt",
+            "Metro Bilbao",
+            "Metro Tobalaba - Mall Costanera",
+            "Pedro de Valdivia",
+            "Pedro de Valdivia Norte",
+            "Plaza Italia",
+            "Salvador"
+        ],
+        "las-condes": [
+            "Alto Las Condes",
+            "Barrio El Golf",
+            "Centro Financiero",
+            "Colón Oriente - Vital Apoquindo",
+            "El Remanso",
+            "Estoril",
+            "Los Dominicos",
+            "Mall Sport",
+            "Metro Escuela Militar",
+            "Metro Hernando de Magallanes",
+            "Metro Manquehue - Apumanque",
+            "Nueva Las Condes",
+            "Parque Arauco",
+            "Parque Padre Alberto Hurtado",
+            "Quinchamalí",
+            "Rotonda Atenas",
+            "San Carlos de Apoquindo",
+            "San Damián",
+            "Sebastián Elcano",
+            "Vaticano"
+        ],
+        "la-reina": [
+            "Blest Gana",
+            "Carlos Ossandón",
+            "Francisco de Villagra",
+            "La Reina Alta",
+            "Metro Príncipe de Gales - Country Club",
+            "Metro Simón Bolivar",
+            "Palmas de Mallorca",
+            "Pepe Vila",
+            "Troncos Viejos",
+            "Villa La Reina"
+        ],
+        "vitacura": [
+            "Borde Río - Casa Piedra",
+            "Estadio Croata",
+            "Estadio Manquehue",
+            "Jardín Del Este",
+            "Juan XXIII",
+            "La Llavería",
+            "Lo Curro",
+            "Nuestra Señora del Rosario",
+            "Parque Bicentenario",
+            "Pío XI",
+            "Santa María de Manquehue",
+            "Tabancura",
+            "Villa El Dorado"
+        ],
+        "lo-barnechea": [
+            "Antigua Lo Barnechea",
+            "Camino a Farellones",
+            "Centros Invernales",
+            "Cerro Dieciocho",
+            "El Arrayán",
+            "El Huinganal",
+            "La Dehesa",
+            "Los Trapenses",
+            "Plaza San Enrique",
+            "Puente Nuevo",
+            "Valle Escondido"
+        ],
+        "macul": [
+            "Campus San Joaquín",
+            "Escuela Agrícola",
+            "Las Dalias",
+            "Lomas de Macul",
+            "Metro Camino Agrícola",
+            "Metro Carlos Valdovinos",
+            "Metro Las Torres",
+            "Metro Los Presidentes",
+            "Metro Macul",
+            "Metro Quilín",
+            "Metro Rodrigo de Araya",
+            "Pedrero - Estadio Monumental",
+            "Santa Julia de Macul",
+            "Villa Macul"
+        ],
+        "penalolen": [
+            "Arboretum - Club de Campo",
+            "Esperanza Andina",
+            "Ictinos",
+            "Las Parcelas",
+            "Las Pircas",
+            "Las Torres",
+            "Metro Los Orientales",
+            "Metro Los Presidentes - Lo Hermida",
+            "Quebrada de Macul",
+            "Quilín - Cousiño Macul",
+            "Villa San Carlos"
+        ],
+        "la-florida": [
+            "Jardines de La Viña",
+            "La Florida Alto",
+            "Lo Cañas - Alto Macul",
+            "Los Quillayes",
+            "Metro Mirador",
+            "Metro Santa Julia",
+            "Nuevo Amanecer - Chacón Zamora",
+            "Plaza Vespucio",
+            "Rojas Magallanes",
+            "San José de La Estrella",
+            "Trinidad",
+            "Vicente Valdés"
+        ],
+        "puente-alto": [
+            "Bajos de Mena",
+            "Casas Viejas",
+            "Cementerios",
+            "Ciudad del Este",
+            "El Peral",
+            "Las Mercedes",
+            "Luis Matte Larraín",
+            "Mall Plaza Tobalaba",
+            "Plaza de Puente Alto",
+            "Plaza Viva",
+            "Protectora de La Infancia",
+            "Sótero del Río"
+        ],
+        "huechuraba": [
+            "Pedro Fontova",
+            "Bosques de la Pirámide",
+            "Ciudad Empresarial",
+            "La Pincoya - El Barrero",
+            "Los Libertadores",
+            "Parque del Recuerdo",
+            "El Rosal"
+        ],
+        "conchali": [
+            "Estación Conchalí",
+            "Vivaceta",
+            "General Gambino",
+            "Cardenal Caro"
+        ],
+        "independencia": [
+            "Hospitales",
+            "Plaza Chacabuco",
+            "Juan Antonio Ríos",
+            "Metro Cal y Canto",
+            "Mirador Viejo"
+        ],
+        "recoleta": [
+            "Cerro Blanco",
+            "Patronato",
+            "Bellavista",
+            "Cementerios",
+            "Einstein",
+            "Dorsal",
+            "Vespucio Norte",
+            "Zapadores",
+            "Avenida El Salto"
+        ],
+        "pedro-aguirre-cerda": [
+            "Metro Pedro Aguirre Cerda",
+            "Miguel Dávila - Villa Sur",
+            "Lo Valledor",
+            "La Marina"
+        ],
+        "san-miguel": [
+            "Ciudad del Niño",
+            "El Llano",
+            "Lo Vial"
+        ],
+        "san-joaquin": [
+            "Rodrigo de Araya",
+            "Carlos Valdovinos",
+            "Metro Pedrero",
+            "La Legua",
+            "Metro San Joaquín",
+            "Camino Agrícola",
+            "Gozzoli - Mussa",
+            "La Castrina"
+        ],
+        "lo-espejo": [],
+        "la-cisterna": [
+            "Metro La Cisterna",
+            "Lo Ovalle",
+            "El Parrón"
+        ],
+        "san-ramon": [
+            "Estadio Municipal de San Ramón",
+            "Metro San Ramón",
+            "San Ramón Sur"
+        ],
+        "la-granja": [
+            "La Granja Sur",
+            "Parque Brasil",
+            "San Gregorio"
+        ],
+        "san-bernardo": [
+            "Nos",
+            "La Maestranza",
+            "Estadio Municipal de San Bernardo",
+            "Plaza de Armas de San Bernardo",
+            "Hospital El Pino",
+            "Las Acacias - Chena",
+            "Lo Herrera"
+        ],
+        "el-bosque": [
+            "Lo Martinez",
+            "Alejandro Guzmán",
+            "El Observatorio"
+        ],
+        "la-pintana": [],
+        "quilicura": [
+            "Norte de Quilicura",
+            "Valle Lo Campino",
+            "Lo Cruzat",
+            "Mall Arauco Quilicura",
+            "San LuisParque Industrial Buenaventura"
+        ],
+        "renca": [
+            "José Manuel Balmaceda",
+            "Parque Las Palmeras",
+            "El Montijo"
+        ],
+        "cerro-navia": [],
+        "quinta-normal": [
+            "Gruta de Lourdes",
+            "Parque Padre Renato Poblete",
+            "Blanqueado",
+            "Lo Espinoza",
+            "Salvador Gutiérrez",
+            "Garín - Lo Besa"
+        ],
+        "pudahuel": [
+            "Ciudad de Los Valles",
+            "Laguna Sur",
+            "Barrancas",
+            "San Francisco",
+            "Lomas de Lo Aguirr",
+            "Metro Pudahuel",
+            "Aeropuerto Arturo Merino Benitez",
+            "Enea",
+            "El Noviciado"
+        ],
+        "lo-prado": [
+            "Metro Lo Prado",
+            "Avenida Las Torres"
+        ],
+        "estacion-central": [
+            "San Alberto Hurtado",
+            "Metro Ecuador",
+            "Metro Las Rejas",
+            "Universidad de Santiago",
+            "Nogales - San Eugenio",
+            "Metro Pajaritos",
+            "Villa Francia"
+        ],
+        "cerrillos": [
+            "Parque Bicentenario - Metro Cerrillos",
+            "Plaza Oeste",
+            "El Mirador"
+        ],
+        "maipu": [
+            "Arauco Maipú",
+            "Avenida Lumen",
+            "Ciudad Satélite",
+            "El Abrazo",
+            "El Descanso",
+            "El Rosal",
+            "Hospital El Carmen de Maipú",
+            "Metro Del Sol",
+            "Metro Las Parcelas",
+            "Metro Santiago Bueras",
+            "Nueva San Martín",
+            "Plaza de Maipú",
+            "Villa Lo Errázuriz",
+            "Zona Industrial de Maipú"
+        ],
+        "padre-hurtado": [
+            "San Ignacio",
+            "Laguna del Sol",
+            "Las Violetas",
+            "El Trébol",
+            "Lo Valdés",
+            "José Luis Caro"
+        ],
+        "colina": [
+            "Chicureo",
+            "Centro de Colina",
+            "Casas de Chacabuco"
+        ],
+        "lampa": [
+            "Centro de Lampa",
+            "Batuco",
+            "Valle Grande",
+            "Chicauma",
+            "Mirador del Valle"
+        ],
+        "til-til": [
+            "Alto El Manzano",
+            "Polpaico",
+            "Caleu",
+            "Huertos Familiares",
+            "Centro de Til Til"
+        ],
+        "pirque": [
+            "Santa Rita",
+            "El Principal",
+            "Alcalde Hernán Prieto",
+            "El Cruceral"
+        ],
+        "san-jose-de-maipo": [
+            "Cajón del Maipo",
+            "Localidad de San José de Maipo"
+        ],
+        "buin": [
+            "Linderos",
+            "Villaseca",
+            "Buin Zoo",
+            "Centro de Buin",
+            "Alto Jahuel",
+            "Viluco - Valdivia de Paine",
+            "Maipo",
+            "El Recurso"
+        ],
+        "calera-de-tango": [
+            "El Copihue",
+            "Camino Loreto",
+            "San José de Tango",
+            "Centro de Calera de Tango",
+            "Santa Inés"
+        ],
+        "paine": [
+            "Laguna de Aculeo",
+            "Centro de Paine",
+            "Hospital - Champa",
+            "Huelquen"
+        ],
+        "alhue": [],
+        "curacavi": [
+            "Centro de Curacaví",
+            "Los Naranjos",
+            "Miraflores"
+        ],
+        "maria-pinto": [],
+        "melipilla": [],
+        "san-pedro": [],
+        "el-monte": [],
+        "isla-de-maipo": [
+            "Centro de Isla de Maipo",
+            "Lonquén Sur",
+            "Naltagua"
+        ],
+        "penaflor": [
+            "Malloco",
+            "Centro de Peñaflor",
+            "Colonia Alemana"
+        ],
+        "talagante": [
+            "El Oliveto",
+            "Centro de Talagante",
+            "Lonquén Sur",
+            "Trebulco",
+            "Santa Adriana"
+        ]
+    }
+}
