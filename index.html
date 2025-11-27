@@ -1,14 +1,251 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Proyecto IMT2200 - Portafolio</title>
-  <meta http-equiv="refresh" content="0; url=web/index.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversión Inmobiliaria - Grupo 16</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- ESTILOS GENERALES (CSS) --- */
+        :root {
+            --primary-color: #2c3e50; /* Azul oscuro corporativo */
+            --accent-color: #3498db;  /* Azul brillante para destaques */
+            --bg-light: #f4f6f7;      /* Gris muy suave para fondos */
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        /* --- MENÚ DE NAVEGACIÓN (Sticky Navbar) --- */
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky; /* Se queda fijo al bajar */
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* --- SECCIÓN HERO (Portada) --- */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #4b6cb7);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* --- CONTENEDORES DE SECCIÓN --- */
+        section {
+            padding: 4rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .bg-light {
+            background-color: var(--bg-light);
+            width: 100%;
+            max-width: 100%; 
+        }
+        
+        .container-limit {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* --- TARJETAS PARA PREGUNTAS --- */
+        .grid-questions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        /* --- LISTA DE INTEGRANTES --- */
+        .team-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+        }
+
+        /* --- PIE DE PÁGINA --- */
+        footer {
+            background-color: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <p>Redirigiendo a la página del proyecto...  
-     Si no eres redirigido automáticamente, haz clic
-     <a href="web/index.html">aquí</a>.
-  </p>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">IMT2200 • Grupo 16</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#metodologia">Metodología</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="inicio">
+        <h1>¿Dónde conviene invertir?</h1>
+        <p class="subtitle">Estimación simple de rentabilidad inmobiliaria por comuna en Chile</p>
+        <p style="margin-top: 20px; font-size: 0.9rem;">Proyecto de Ciencia de Datos</p>
+    </header>
+
+    <section>
+        <h2>Contexto y Motivación</h2>
+        <p>
+            Este proyecto surge con el propósito de responder las inquietudes relacionadas con la inversión inmobiliaria en el actual contexto sociopolítico del país.
+            Consideramos una amplia gama de factores que inciden directa o indirectamente en las transacciones del mercado de bienes raíces.
+        </p>
+        <p>
+            <strong>Nuestra audiencia:</strong> Inversionistas particulares, inmobiliarias, asesores financieros y profesionales del rubro.
+        </p>
+    </section>
+
+    <div class="bg-light">
+        <section id="objetivos" class="container-limit">
+            <h2>Objetivo Científico</h2>
+            <p>
+                Buscamos medir y predecir la rentabilidad de una inversión inmobiliaria, tanto por región como por comuna, en un lapso de 12 meses.
+                Para esto, consideramos tanto el flujo de arriendo como la plusvalía.
+            </p>
+
+            <h3 style="margin-top: 30px; color: #555;">Preguntas de Investigación</h3>
+            <div class="grid-questions">
+                <div class="card">¿Qué regiones/comunas muestran mayor rentabilidad esperada?</div>
+                <div class="card">¿Qué tanto influye la conectividad en la plusvalía?</div>
+                <div class="card">¿Existe estacionalidad para invertir o arrendar?</div>
+                <div class="card">¿Cómo se relaciona la antigüedad con la plusvalía?</div>
+                <div class="card">Comparación de tipologías (1D vs 2D) en una misma comuna</div>
+            </div>
+        </section>
+    </div>
+
+    <section id="metodologia">
+        <h2>Metodología y Datos</h2>
+        <p>
+            Para el diseño tentativo, recolectaremos datos de precios y arriendos mediante <strong>Web Scraping</strong> en Python. 
+            Complementaremos esta información con fuentes públicas oficiales.
+        </p>
+        
+        <h3>Fuentes de Datos</h3>
+        <ul>
+            <li><strong>Banco Central:</strong> UF, tasas e indicadores.</li>
+            <li><strong>INE:</strong> Demografía y permisos de edificación.</li>
+            <li><strong>CMF:</strong> Tasas hipotecarias promedio.</li>
+            <li><strong>DTPM:</strong> Datos de transporte (GTFS).</li>
+        </ul>
+
+        <h3>Herramientas Técnicas</h3>
+        <p>
+            Utilizaremos <code>Pandas</code> y <code>Numpy</code> para limpieza, <code>SQL</code> para depuración y bases de datos, 
+            y análisis estadístico mediante regresiones lineales para estimar precios y rentabilidad.
+        </p>
+    </section>
+
+    <div class="bg-light">
+        <section id="equipo" class="container-limit">
+            <h2>Grupo 16</h2>
+            <ul class="team-list">
+                <li class="team-member">Carolina Isabel Neira Coronado</li>
+                <li class="team-member">José Iñíguez Romero</li>
+                <li class="team-member">Reinaldo Rodrigo Oliva Morales</li>
+                <li class="team-member">Ignacio Andrés Osorio Orellana</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>IMT2200 - Introducción a la Ciencia de Datos | Pontificia Universidad Católica de Chile</p>
+        <p><a href="https://github.com/ignosorioo/Proyecto_IMT2200" style="color: #3498db;">Ver Repositorio en GitHub</a></p>
+    </footer>
+
 </body>
-</html>
