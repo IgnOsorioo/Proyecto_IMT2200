@@ -2,11 +2,91 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=web/index.html">
-  <title>Redirigiendo…</title>
+  <title>Proyecto IMT2200 - Pagina Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      line-height: 1.5;
+    }
+    header {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      margin-bottom: 0.3rem;
+    }
+    .tagline {
+      color: #555;
+      margin-top: 0;
+    }
+    section {
+      margin-bottom: 1.5rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .integrantes li {
+      margin-bottom: 0.2rem;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <p>Si no eres redirigido automáticamente, haz clic 
-     <a href="web/index.html">aquí</a>.</p>
+  <header>
+    <h1>Proyecto IMT2200 - Introducción a la Ciencia de Datos</h1>
+    <p class="tagline">Análisis de los precios por comuna en la compra/venta de inmuebles</p>
+  </header>
+
+  <section>
+    <h2>Descripción del proyecto</h2>
+    <p>
+      En este proyecto analizamos el conjunto de datos del portal inmobiliario,
+      con el objetivo de poder ver las principales diferencias en el precio de arriendo/compra por comuna. Utilizamos herramientas de
+      ciencia de datos para limpiar, transformar y explorar la información.
+    </p>
+  </section>
+
+  <section>
+    <h2>Datos y metodología</h2>
+    <ul>
+      <li><strong>Fuente de datos: https://www.portalinmobiliario.com
+      <li><strong>ETL:</strong> limpieza, transformaciones principales, manejo de valores faltantes, etc.</li>
+      <li><strong>Análisis:</strong> métricas, visualizaciones, modelos, etc.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Resultados principales</h2>
+    <p>
+      Resumir los hallazgos más importantes: patrones encontrados, comparaciones relevantes,
+      conclusiones que respondan a la pregunta del proyecto.
+    </p>
+  </section>
+
+  <section>
+    <h2>Enlaces al repositorio</h2>
+    <ul>
+      <li><a href="../repositorio_final.ipynb">Notebook final del análisis</a></li>
+      <li><a href="../ETL.ipynb">Notebook ETL</a></li>
+      <li><a href="../Gr%C3%A1ficos">Carpeta de gráficos</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Integrantes</h2>
+    <ul class="integrantes">
+      <li>Carolina Neira — csneira@uc.cl</li>
+      <li>José Romero — josep@estudiante.uc.cl</li>
+      <li>Reinaldo Oliva — reinaldo.oliva@uc.cl</li>
+      <li>Ignacio Osorio — ign.osorio@estudiante.uc.cl</li>
+    </ul>
+  </section>
+
 </body>
 </html>
