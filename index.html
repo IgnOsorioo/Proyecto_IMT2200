@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inversión Inmobiliaria - Grupo 16</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Resultados: Inversión Inmobiliaria - Grupo 16</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* --- ESTILOS GENERALES (CSS) --- */
+        /* --- ESTILOS GENERALES --- */
         :root {
-            --primary-color: #2c3e50; /* Azul oscuro corporativo */
-            --accent-color: #3498db;  /* Azul brillante para destaques */
-            --bg-light: #f4f6f7;      /* Gris muy suave para fondos */
-            --text-color: #333;
+            --primary: #2c3e50;    /* Azul oscuro */
+            --secondary: #34495e;  /* Azul grisáceo */
+            --accent: #27ae60;     /* Verde para resultados positivos */
+            --light: #ecf0f1;
+            --text: #333;
         }
 
         body {
@@ -19,143 +20,117 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            color: var(--text-color);
+            color: var(--text);
+            background-color: #f9f9f9;
         }
 
-        /* --- MENÚ DE NAVEGACIÓN (Sticky Navbar) --- */
+        /* --- NAVEGACIÓN --- */
         nav {
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky; /* Se queda fijo al bajar */
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
             top: 0;
             z-index: 1000;
-            padding: 1rem 0;
         }
 
         .nav-container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 1rem 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
         }
 
-        .logo {
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: var(--primary-color);
-        }
+        .logo { font-weight: 700; font-size: 1.2rem; color: var(--primary); }
+        
+        .nav-links { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+        .nav-links a { text-decoration: none; color: var(--secondary); font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
 
-        .nav-links {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-links li {
-            margin-left: 30px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-color);
-        }
-
-        /* --- SECCIÓN HERO (Portada) --- */
+        /* --- HEADER --- */
         header {
-            background: linear-gradient(135deg, var(--primary-color), #4b6cb7);
+            background: linear-gradient(135deg, var(--primary), #2980b9);
             color: white;
             text-align: center;
-            padding: 4rem 1rem;
+            padding: 5rem 1rem;
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
 
-        header .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* --- CONTENEDORES DE SECCIÓN --- */
+        /* --- SECCIONES --- */
         section {
             padding: 4rem 1rem;
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
         h2 {
-            color: var(--primary-color);
-            border-bottom: 3px solid var(--accent-color);
-            display: inline-block;
-            margin-bottom: 1.5rem;
+            color: var(--primary);
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+            margin-bottom: 2rem;
         }
 
-        .bg-light {
-            background-color: var(--bg-light);
-            width: 100%;
-            max-width: 100%; 
-        }
-        
-        .container-limit {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
+        h3 { color: var(--secondary); margin-top: 2rem; }
 
-        /* --- TARJETAS PARA PREGUNTAS --- */
-        .grid-questions {
+        .white-bg { background: white; width: 100%; max-width: 100%; box-shadow: 0 5px 15px rgba(0,0,0,0.02); }
+
+        /* --- TARJETAS DE MÉTRICAS (KPIs) --- */
+        .metrics-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
-            margin-top: 20px;
+            margin-bottom: 30px;
         }
 
-        .card {
+        .metric-card {
             background: white;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            border-left: 4px solid var(--accent-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 4px solid var(--accent);
         }
 
-        /* --- LISTA DE INTEGRANTES --- */
-        .team-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+        .metric-value { font-size: 2.5rem; font-weight: 700; color: var(--primary); display: block; }
+        .metric-label { font-size: 0.9rem; color: #7f8c8d; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* --- CONTENEDORES DE IMAGEN Y TEXTO --- */
+        .content-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
         }
 
-        .team-member {
-            background: var(--primary-color);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-size: 0.9rem;
+        .content-split img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        /* --- PIE DE PÁGINA --- */
+        .analysis-text ul { padding-left: 20px; }
+        .analysis-text li { margin-bottom: 10px; }
+
+        /* --- TABLA SIMPLE --- */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; }
+        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: var(--primary); color: white; }
+
+        /* --- FOOTER --- */
         footer {
-            background-color: #222;
-            color: #aaa;
+            background: var(--primary);
+            color: white;
             text-align: center;
             padding: 2rem;
-            margin-top: 2rem;
-            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .content-split { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -165,87 +140,140 @@
         <div class="nav-container">
             <div class="logo">IMT2200 • Grupo 16</div>
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#objetivos">Objetivos</a></li>
-                <li><a href="#metodologia">Metodología</a></li>
-                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#eda">Datos</a></li>
+                <li><a href="#modelo">Modelo</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#conclusiones">Conclusiones</a></li>
             </ul>
         </div>
     </nav>
 
-    <header id="inicio">
-        <h1>¿Dónde conviene invertir?</h1>
-        <p class="subtitle">Estimación simple de rentabilidad inmobiliaria por comuna en Chile</p>
-        <p style="margin-top: 20px; font-size: 0.9rem;">Proyecto de Ciencia de Datos</p>
+    <header>
+        <h1>Análisis del Mercado Inmobiliario</h1>
+        <p>Predicción de Precios de Venta y Arriendo en la Región Metropolitana</p>
+        <p style="font-size: 0.9rem; margin-top: 20px;">Proyecto Final de Ciencia de Datos</p>
     </header>
 
-    <section>
-        <h2>Contexto y Motivación</h2>
-        <p>
-            Este proyecto surge con el propósito de responder las inquietudes relacionadas con la inversión inmobiliaria en el actual contexto sociopolítico del país.
-            Consideramos una amplia gama de factores que inciden directa o indirectamente en las transacciones del mercado de bienes raíces.
-        </p>
-        <p>
-            <strong>Nuestra audiencia:</strong> Inversionistas particulares, inmobiliarias, asesores financieros y profesionales del rubro.
-        </p>
+    <section id="eda">
+        <h2>Exploración de Datos (EDA)</h2>
+        <p>Utilizamos una base de datos robusta recolectada mediante Web Scraping y enriquecida con datos del Banco Central, INE y CMF.</p>
+        
+        <div class="content-split">
+            <div class="analysis-text">
+                <h3>Resumen del Dataset</h3>
+                <ul>
+                    <li><strong>Total Registros:</strong> Procesamos más de 33,000 propiedades (Venta y Arriendo).</li>
+                    <li><strong>Tipos de Inmueble:</strong> Predominancia de Departamentos y Casas, con menor cantidad de Parcelas.</li>
+                    <li><strong>Limpieza:</strong> Se eliminaron outliers (percentiles 1% y 99%) en precios y superficies para evitar sesgos.</li>
+                </ul>
+            </div>
+            <div class="img-container">
+                <img src="img/distribucion_precios.png" alt="Distribución de Precios y Tipos" onerror="this.src='https://via.placeholder.com/500x300?text=Gráfico+EDA+Precios'">
+                <p style="text-align: center; font-size: 0.8rem; color: #666;">Distribución logarítmica de precios</p>
+            </div>
+        </div>
     </section>
 
-    <div class="bg-light">
-        <section id="objetivos" class="container-limit">
-            <h2>Objetivo Científico</h2>
-            <p>
-                Buscamos medir y predecir la rentabilidad de una inversión inmobiliaria, tanto por región como por comuna, en un lapso de 12 meses.
-                Para esto, consideramos tanto el flujo de arriendo como la plusvalía.
-            </p>
+    <div class="white-bg">
+        <section id="modelo">
+            <h2>Metodología de Modelado</h2>
+            <p>Elegimos <strong>Random Forest Regressor</strong> por sobre la regresión lineal simple. Según nuestro análisis:</p>
+            <blockquote>
+                "Random Forest es robusto para capturar la complejidad del mercado inmobiliario, detectando patrones no lineales que la regresión ignora y evitando el sobreajuste."
+            </blockquote>
 
-            <h3 style="margin-top: 30px; color: #555;">Preguntas de Investigación</h3>
-            <div class="grid-questions">
-                <div class="card">¿Qué regiones/comunas muestran mayor rentabilidad esperada?</div>
-                <div class="card">¿Qué tanto influye la conectividad en la plusvalía?</div>
-                <div class="card">¿Existe estacionalidad para invertir o arrendar?</div>
-                <div class="card">¿Cómo se relaciona la antigüedad con la plusvalía?</div>
-                <div class="card">Comparación de tipologías (1D vs 2D) en una misma comuna</div>
+            <h3>Variables Clave Utilizadas</h3>
+            <p>El modelo se entrenó considerando tres dimensiones principales:</p>
+            <ol>
+                <li><strong>Características Físicas:</strong> Superficie total ($m^2$), Dormitorios, Baños.</li>
+                <li><strong>Conectividad:</strong> Distancia a Metro, Micro, Tren y Buses.</li>
+                <li><strong>Entorno (POIs):</strong> Proximidad a zonas de salud, educación, áreas verdes y seguridad.</li>
+            </ol>
+        </section>
+    </div>
+
+    <section id="resultados">
+        <h2>Resultados del Modelo</h2>
+        
+        <h3>1. Predicción de Venta</h3>
+        <p>El modelo alcanzó un rendimiento excepcional explicando casi el 93% de la variabilidad de los precios.</p>
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <span class="metric-value">0.9296</span>
+                <span class="metric-label">R² Score</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">44.8M</span>
+                <span class="metric-label">MAE (Error Absoluto)</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">90.5M</span>
+                <span class="metric-label">RMSE (Error Cuadrático)</span>
+            </div>
+        </div>
+
+        <div class="content-split">
+            <img src="img/importancia_venta.png" alt="Importancia de Variables Venta" onerror="this.src='https://via.placeholder.com/500x300?text=Feature+Importance+Venta'">
+            <div>
+                <h4>¿Qué define el precio de venta?</h4>
+                <p>Según el algoritmo, las variables más determinantes son:</p>
+                <ul>
+                    <li><strong>Baños y Superficie Total:</strong> Son los predictores más fuertes.</li>
+                    <li><strong>Conectividad:</strong> La distancia a paradas de Bus y Tren influye significativamente.</li>
+                    <li><strong>Entorno:</strong> La cercanía a zonas industriales y servicios financieros.</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+        <h3>2. Predicción de Arriendo</h3>
+        <p>El modelo de arriendo también mostró un buen desempeño ($R^2 \approx 0.88$).</p>
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <span class="metric-value">0.8787</span>
+                <span class="metric-label">R² Score</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">156K</span>
+                <span class="metric-label">MAE (Pesos)</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">362K</span>
+                <span class="metric-label">RMSE (Pesos)</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="white-bg">
+        <section id="geo">
+            <h2>Análisis Geoespacial</h2>
+            <div class="content-split">
+                <div>
+                    <p>Realizamos un análisis espacial detallado para comunas clave como <strong>Providencia</strong>, cruzando la ubicación de propiedades con puntos de interés.</p>
+                    <p>En el mapa se observa cómo la oferta inmobiliaria (puntos rojos y azules) se aglomera en torno a ejes de transporte y áreas verdes.</p>
+                </div>
+                <img src="img/mapa_providencia.png" alt="Mapa Providencia" onerror="this.src='https://via.placeholder.com/500x400?text=Mapa+Geoespacial'">
             </div>
         </section>
     </div>
 
-    <section id="metodologia">
-        <h2>Metodología y Datos</h2>
-        <p>
-            Para el diseño tentativo, recolectaremos datos de precios y arriendos mediante <strong>Web Scraping</strong> en Python. 
-            Complementaremos esta información con fuentes públicas oficiales.
-        </p>
-        
-        <h3>Fuentes de Datos</h3>
+    <section id="conclusiones">
+        <h2>Conclusiones Finales</h2>
+        <p>El proyecto logró responder las preguntas de investigación planteadas:</p>
         <ul>
-            <li><strong>Banco Central:</strong> UF, tasas e indicadores.</li>
-            <li><strong>INE:</strong> Demografía y permisos de edificación.</li>
-            <li><strong>CMF:</strong> Tasas hipotecarias promedio.</li>
-            <li><strong>DTPM:</strong> Datos de transporte (GTFS).</li>
+            <li><strong>Rentabilidad y Valor:</strong> Logramos predecir el valor de mercado con un error controlado, permitiendo a inversionistas estimar retornos con datos reales.</li>
+            <li><strong>Factores Críticos:</strong> Se demostró que si bien el tamaño ($m^2$) es rey, la conectividad (transporte público) y el entorno (seguridad, áreas verdes) juegan un rol secundario pero vital para ajustar el precio final.</li>
+            <li><strong>Diferencias Venta vs Arriendo:</strong> Mientras la venta depende mucho de características estructurales (baños, dormitorios), el arriendo es más sensible a la ubicación inmediata y servicios.</li>
         </ul>
-
-        <h3>Herramientas Técnicas</h3>
-        <p>
-            Utilizaremos <code>Pandas</code> y <code>Numpy</code> para limpieza, <code>SQL</code> para depuración y bases de datos, 
-            y análisis estadístico mediante regresiones lineales para estimar precios y rentabilidad.
-        </p>
     </section>
-
-    <div class="bg-light">
-        <section id="equipo" class="container-limit">
-            <h2>Grupo 16</h2>
-            <ul class="team-list">
-                <li class="team-member">Carolina Isabel Neira Coronado</li>
-                <li class="team-member">José Iñíguez Romero</li>
-                <li class="team-member">Reinaldo Rodrigo Oliva Morales</li>
-                <li class="team-member">Ignacio Andrés Osorio Orellana</li>
-            </ul>
-        </section>
-    </div>
 
     <footer>
         <p>IMT2200 - Introducción a la Ciencia de Datos | Pontificia Universidad Católica de Chile</p>
-        <p><a href="https://github.com/ignosorioo/Proyecto_IMT2200" style="color: #3498db;">Ver Repositorio en GitHub</a></p>
+        <p><a href="https://github.com/ignosorioo/Proyecto_IMT2200" style="color: #3498db; text-decoration: none;">Ver Repositorio y Notebooks en GitHub</a></p>
     </footer>
 
 </body>
+</html>
